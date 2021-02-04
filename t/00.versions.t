@@ -5,14 +5,13 @@ use warnings;
 
 # I tried 'require'-ing modules but that did not work.
 
-use Config::Tiny; # For the version #.
+use DBIx::HTML::PopupRadio; # For the version #.
 
 use Test::More;
 
-use File::Spec;
-use File::Temp;
+use HTML::Entities::Interpolate;
 use strict;
-use utf8;
+use warnings;
 
 # ----------------------
 
@@ -20,13 +19,12 @@ pass('All external modules loaded');
 
 my(@modules) = qw
 /
-	File::Spec
-	File::Temp
+	HTML::Entities::Interpolate
 	strict
-	utf8
+	warnings
 /;
 
-diag "Testing Config::Tiny V $Config::Tiny::VERSION";
+diag "Testing DBIx::HTML::PopupRadio V $DBIx::HTML::PopupRadio::VERSION";
 
 for my $module (@modules)
 {
