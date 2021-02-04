@@ -24,8 +24,9 @@ my(%params) =
 	PL_FILES	=> {},
 	PREREQ_PM	=>
 	{
-		'Carp'							=> 0,
 		'HTML::Entities::Interpolate'	=> 1.00,
+		'strict'						=> 0,
+		'warnings'						=> 0,
 	},
 	TEST_REQUIRES =>
 	{

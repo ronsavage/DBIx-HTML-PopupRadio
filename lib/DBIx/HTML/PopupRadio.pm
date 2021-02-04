@@ -1,6 +1,6 @@
 package DBIx::HTML::PopupRadio;
 
-se strict;
+use strict;
 use warnings;
 
 our $VERSION = '1.17';
